@@ -898,3 +898,8 @@ textarea.input-field {
   .about .grid-list { gap: 60px; }
 
 }
+
+/* Chat widget container override */
+.chat-widget-container {
+  z-index: 1000;
+}
