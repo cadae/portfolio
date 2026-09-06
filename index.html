@@ -1,594 +1,746 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- 
-    - primary meta tags
-  -->
-  <title>Luke - Machine Learning Engineer</title>
-  <meta name="title" content="Luke - Machine Learning Engineer">
-  <meta name="description" content="Personal portfolio showcasing innovative AI and machine learning solutions for healthcare by Luke">
-
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
-
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - preload images
-  -->
-  <link rel="preload" as="image" href="./assets/images/hero-banner-small.webp">
-  <link rel="preload" as="image" href="./assets/images/project-1.webp">
-  <link rel="preload" as="image" href="./assets/images/project-2.webp">
-  <link rel="preload" as="image" href="./assets/images/project-3.webp">
-  <link rel="preload" as="image" href="./assets/images/project-4.webp">
-  <link rel="preload" as="image" href="./assets/images/Blog.svg">
-
-</head>
-
-<body>
-
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
-    <div class="container">
-
-      <a href="#" class="logo">
-        <img src="./assets/images/logo-dark.svg" width="64" height="24" alt="Luke home">
-      </a>
-
-      <nav class="navbar" data-navbar>
-
-        <div class="navbar-top">
-          <a href="#" class="logo">
-            <img src="./assets/images/logo-light.svg" width="64" height="24" alt="Luke home">
-          </a>
-
-          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
-          </button>
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f5ef" />
+    <title>Luke Cao — Senior Machine Learning Engineer · Healthcare AI</title>
+    <meta
+      name="description"
+      content="Luke (Guanhua) Cao is a Sydney-based senior machine learning engineer specialising in production ML, MLOps, and healthcare AI, from predictive analytics and patient monitoring to clinical NLP and automated coding."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Luke Cao — Intelligence built for better care."
+    />
+    <meta
+      property="og:description"
+      content="Machine learning, clinical intelligence, and thoughtful engineering. Explore Luke Cao’s healthcare AI work."
+    />
+    <meta property="og:url" content="https://guanhuacao.com/" />
+    <meta
+      property="og:image"
+      content="https://guanhuacao.com/assets/images/hero-banner-small.webp"
+    />
+    <link rel="canonical" href="https://guanhuacao.com/" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:ital,wght@1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="wordmark" href="#home" aria-label="Luke Cao, home"
+          >luke cao<span>.</span></a
+        >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="navigation"
+          hidden
+        >
+          Menu
+        </button>
+        <nav id="navigation" aria-label="Main navigation">
+          <a href="#projects">Selected work</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#experience">Experience</a>
+          <a class="nav-contact" href="#contact"
+            >Let’s talk <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero container" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span> SENIOR ML
+            ENGINEER · SYDNEY
+          </p>
+          <h1 id="hero-title">
+            Intelligence <br />built for <br /><em>better care.</em>
+          </h1>
+          <p class="hero-intro">
+            I’m Luke (Guanhua) Cao, a senior machine learning engineer. I build
+            production ML systems that turn complex health data into better
+            decisions.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects"
+              >Explore my work <span aria-hidden="true">↘</span></a
+            >
+            <a class="text-link" href="#about"
+              >A little about me <span aria-hidden="true">↗</span></a
+            >
+          </div>
         </div>
-
-        <ul class="navbar-list">
-
-          <li>
-            <a href="#" class="navbar-link">Home</a>
-          </li>
-
-          <li>
-            <a href="#about" class="navbar-link">About</a>
-          </li>
-
-          <li>
-            <a href="#projects" class="navbar-link">Projects</a>
-          </li>
-
-          <!-- <li>
-            <a href="#blog" class="navbar-link">Blog</a>
-          </li> -->
-
-          <li>
-            <a href="#contact" class="navbar-link">Contact</a>
-          </li>
-
-        </ul>
-
-        <div class="wrapper">
-          <a href="mailto:guanhuacao@outlook.com" class="contact-link">guanhuacao@outlook.com</a>
-        </div>
-
-        <ul class="social-list">
-
-          <li>
-            <a href="mailto:guanhuacao@outlook.com" class="social-link">
-              <ion-icon name="mail-outline"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://www.linkedin.com/in/guanhuacao/" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="https://github.com/cadae" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
-      </button>
-
-      <div class="overlay" data-nav-toggler data-overlay></div>
-
-    </div>
-  </header>
-
-
-
-
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="section hero" aria-label="home">
-        <div class="container">
-
-          <figure class="hero-banner">
-            <img src="./assets/images/hero-banner-small.webp" width="560" height="540" alt="Luke" class="w-100"
-              data-reveal="top">
-
-            <img src="./assets/images/badge.webp" width="150" height="100" alt="ML" class="shape"
-              data-reveal="top" data-reveal-delay="0.25s">
+        <div class="hero-profile">
+          <div class="profile-topline">
+            <span>THE HUMAN BEHIND THE MODELS</span><span>01 / LC</span>
+          </div>
+          <figure class="portrait">
+            <img
+              src="./assets/images/hero-banner-small.webp"
+              alt="Illustrated portrait of Luke Cao outdoors"
+              width="512"
+              height="512"
+              fetchpriority="high"
+            />
+            <figcaption>
+              <span>Luke Cao</span><span>Sydney, Australia</span>
+            </figcaption>
           </figure>
+          <div class="profile-note">
+            <span class="note-label">MY FOCUS</span>
+            <p>Thoughtful engineering. <br />Meaningful clinical impact.</p>
+          </div>
+        </div>
+      </section>
+      <div class="focus-strip container" aria-label="Areas of focus">
+        <span class="eyebrow">AT THE INTERSECTION OF</span>
+        <span>Production ML &amp; MLOps</span><span>Clinical intelligence</span
+        ><span>Human-centred healthcare</span>
+      </div>
 
-          <div class="hero-content">
-
-            <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
-              Transforming Healthcare with Innovative AI Solutions
-            </h1>
-
-            <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
-              As a specialised Machine Learning Engineer based in Sydney, Luke (Guanhua) Cao delivers innovative AI solutions that transform healthcare workflows, enhance diagnostic accuracy, and improve patient outcomes.
+      <section
+        class="section container"
+        id="projects"
+        aria-labelledby="work-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 / SELECTED WORK</p>
+            <h2 id="work-title">
+              Complex challenges. <br /><em>Practical applications.</em>
+            </h2>
+          </div>
+          <p>
+            From anticipating patient risk to making sense of clinical records.
+            A selection of my work in healthcare AI.
+          </p>
+        </div>
+        <article class="latest-project" data-category="predictive">
+          <div>
+            <p class="eyebrow">RECENT WORK / 2025</p>
+            <h3>The Evolve <br /><em>Collaborative.</em></h3>
+          </div>
+          <div>
+            <p>
+              AI-powered analytics for better hospital performance. A
+              collaboration between Beamtree and the NHS Confederation, bringing
+              benchmarking and predictive forecasting to NHS trusts.
             </p>
-
-            <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
-              <a href="#projects" class="btn btn-primary">View Projects</a>
-
-              <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-            </div>
-
+            <a
+              class="text-link"
+              href="https://www.nhsconfed.org/news/new-ai-powered-data-tool-launched-help-hospitals-improve-their-performance-and-productivity"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Meet the Evolve Collaborative <span aria-hidden="true">↗</span
+              ><span class="sr-only"> (opens in a new tab)</span></a
+            >
           </div>
-
+        </article>
+        <div class="work-toolbar">
+          <div class="filters" role="group" aria-label="Filter projects" hidden>
+            <button type="button" data-filter="all" aria-pressed="true">
+              All work <span>05</span>
+            </button>
+            <button type="button" data-filter="predictive" aria-pressed="false">
+              Predictive AI
+            </button>
+            <button type="button" data-filter="language" aria-pressed="false">
+              Language &amp; automation
+            </button>
+          </div>
+          <p class="project-count" role="status" aria-live="polite">
+            5 selected projects
+          </p>
         </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="section about" aria-label="about" id="about">
-        <div class="container">
-
-          <div class="wrapper">
-
-            <div data-reveal="left">
-              <h2 class="h2 section-title">What I Do</h2>
-
-              <p class="section-text">
-                I develop AI-powered solutions for healthcare challenges. My expertise includes classical machine learning, clinical decision support systems, predictive patient monitoring, and healthcare data analytics. I focus on delivering accurate, interpretable models that help healthcare providers improve diagnosis, treatment planning, and patient care.
+        <div class="project-grid">
+          <article class="project-card featured" data-category="predictive">
+            <div class="project-visual">
+              <img
+                src="./assets/images/project-1.webp"
+                width="1280"
+                height="721"
+                loading="lazy"
+                alt="Concept illustration of a hospital beside green glass forecasting columns"
+              /><span class="visual-label">PREDICTIVE ANALYTICS</span>
+            </div>
+            <div class="project-body">
+              <div class="project-kicker">
+                <span>01 / HEALTH ROUNDTABLE</span><span>FORECASTING</span>
+              </div>
+              <h3>Making hospital data <br />look ahead.</h3>
+              <p>
+                Machine learning for the Health Roundtable Insights Platform,
+                helping turn hospital performance data into useful forecasts.
               </p>
+              <ul class="tags" aria-label="Methods">
+                <li>Gradient boosting</li>
+                <li>Random forests</li>
+                <li>Ensemble models</li>
+              </ul>
+              <details>
+                <summary>
+                  Inside the project <span aria-hidden="true">+</span>
+                </summary>
+                <div class="project-detail">
+                  <h4>The challenge</h4>
+                  <p>
+                    Help healthcare teams anticipate changes in performance,
+                    clinical quality, patient safety, and operational
+                    efficiency.
+                  </p>
+                  <h4>My contribution</h4>
+                  <p>
+                    Developed classical machine learning models to power
+                    predictive forecasting within an interactive hospital
+                    analytics platform.
+                  </p>
+                </div>
+              </details>
+              <a
+                class="project-link"
+                href="https://platform.healthroundtable.org/news/transforming-healthcare-predictive-forecasting-now-available-health-roundtable-members"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Explore the platform <span aria-hidden="true">↗</span
+                ><span class="sr-only"> (opens in a new tab)</span></a
+              >
             </div>
-
-            <ul class="progress-list" data-reveal="right">
-
-              <li class="progress-item">
-
-                <div class="label-wrapper">
-                  <p>Classical Machine Learning</p>
-
-                  <span class="span">95 %</span>
-                </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 95%; background-color: #c7b1dd"></div>
-                </div>
-
-              </li>
-
-              <li class="progress-item">
-
-                <div class="label-wrapper">
-                  <p>Clinical Decision Support</p>
-
-                  <span class="span">90 %</span>
-                </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 90%; background-color: #8caeec"></div>
-                </div>
-
-              </li>
-
-              <li class="progress-item">
-
-                <div class="label-wrapper">
-                  <p>Health Data Analytics</p>
-
-                  <span class="span">85 %</span>
-                </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 85%; background-color: #b0d4c1"></div>
-                </div>
-
-              </li>
-
-              <li class="progress-item">
-
-                <div class="label-wrapper">
-                  <p>Predictive Patient Monitoring</p>
-
-                  <span class="span">80 %</span>
-                </div>
-
-                <div class="progress">
-                  <div class="progress-fill" style="width: 80%; background-color: #e3a6b6"></div>
-                </div>
-
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="grid-list">
-
-            <li data-reveal="bottom">
-              <div class="about-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="machine learning icon">
-                </div>
-
-                <h3 class="h4 card-title">Classical Machine Learning</h3>
-
-                <p class="card-text">
-                  Implementing statistical and ML algorithms including linear regression, gradient boosting trees, and random forests to analyse medical data, predict patient outcomes, and identify key factors for personalised treatment planning.
-                </p>
-
+          </article>
+          <article class="project-card" data-category="language">
+            <div class="project-visual">
+              <img
+                src="./assets/images/project-2.webp"
+                width="1280"
+                height="721"
+                loading="lazy"
+                alt="Concept illustration of clinical documents transformed into structured information"
+              /><span class="visual-label">CLINICAL NLP</span>
+            </div>
+            <div class="project-body">
+              <div class="project-kicker">
+                <span>02 / CLINICAL NOTES ANALYSIS</span>
               </div>
-            </li>
-
-            <li data-reveal="bottom" data-reveal-delay="0.25s">
-              <div class="about-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-4.svg" width="52" height="52" loading="lazy" alt="computer vision icon">
+              <h3>From clinical text <br />to clearer insight.</h3>
+              <p>
+                Extracting medical information from unstructured notes to
+                support clinical review and better connected patient data.
+              </p>
+              <ul class="tags" aria-label="Methods">
+                <li>Natural language processing</li>
+                <li>Information extraction</li>
+              </ul>
+              <details>
+                <summary>
+                  Inside the project <span aria-hidden="true">+</span>
+                </summary>
+                <div class="project-detail">
+                  <h4>The challenge</h4>
+                  <p>
+                    Important patient information lives in free-text notes that
+                    are difficult to analyse consistently at scale.
+                  </p>
+                  <h4>The work</h4>
+                  <p>
+                    Clinical NLP to convert unstructured text into structured
+                    information and surface potential medication interactions
+                    and adverse events for review.
+                  </p>
                 </div>
-
-                <h3 class="h4 card-title">Clinical Decision Support</h3>
-
-                <p class="card-text">
-                  Building AI systems that analyse patient data to provide evidence-based recommendations for diagnosis and treatment plans, helping clinicians make more informed decisions while reducing medical errors.
-                </p>
-
+              </details>
+              <a
+                class="project-link"
+                href="https://beamtree.com.au/our-solutions/rippledown-expert/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Related clinical decision support
+                <span aria-hidden="true">↗</span
+                ><span class="sr-only"> (opens in a new tab)</span></a
+              >
+            </div>
+          </article>
+          <article class="project-card" data-category="predictive">
+            <div class="project-visual">
+              <img
+                src="./assets/images/project-3.webp"
+                width="1280"
+                height="721"
+                loading="lazy"
+                alt="Concept illustration of a green heart sculpture and a patient monitoring signal"
+              /><span class="visual-label">PATIENT MONITORING</span>
+            </div>
+            <div class="project-body">
+              <div class="project-kicker">
+                <span>03 / PATIENT DETERIORATION</span>
               </div>
-            </li>
-
-            <li data-reveal="bottom" data-reveal-delay="0.5s">
-              <div class="about-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-2.svg" width="52" height="52" loading="lazy"
-                    alt="NLP icon">
+              <h3>Earlier signals. <br />More time to act.</h3>
+              <p>
+                Analysing vital signs and laboratory results to identify
+                deterioration risk and support timely clinical intervention.
+              </p>
+              <ul class="tags" aria-label="Methods">
+                <li>Predictive modelling</li>
+                <li>Clinical decision support</li>
+              </ul>
+              <details>
+                <summary>
+                  Inside the project <span aria-hidden="true">+</span>
+                </summary>
+                <div class="project-detail">
+                  <h4>The challenge</h4>
+                  <p>
+                    Give clinical teams an earlier, actionable view of patient
+                    risk across a ward or hospital.
+                  </p>
+                  <h4>The application</h4>
+                  <p>
+                    Real-time patient monitoring that brings vital signs and
+                    laboratory results together to support risk assessment.
+                  </p>
+                  <p class="source-note">
+                    Product evidence: Beamtree reports a 5% reduction in length
+                    of stay in a published ADI implementation study. This is a
+                    product-level result, not an individual performance claim.
+                  </p>
                 </div>
-
-                <h3 class="h4 card-title">Health Data Analytics</h3>
-
-                <p class="card-text">
-                  Analysing electronic health records and clinical notes using NLP to extract insights, identify trends, and generate structured data from unstructured medical text for improved patient care coordination.
-                </p>
-
+              </details>
+              <a
+                class="project-link"
+                href="https://beamtree.com.au/our-solutions/ainsoff-deterioration-index/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Explore Ainsoff &amp; study results
+                <span aria-hidden="true">↗</span
+                ><span class="sr-only"> (opens in a new tab)</span></a
+              >
+            </div>
+          </article>
+          <article class="project-card project-coding" data-category="language">
+            <div class="project-visual">
+              <img
+                src="./assets/images/project-4.webp"
+                width="1280"
+                height="721"
+                loading="lazy"
+                alt="Concept illustration of clinical documents passing into organised coding tiles"
+              /><span class="visual-label">GENERATIVE AI</span>
+            </div>
+            <div class="project-body">
+              <div class="project-kicker">
+                <span>04 / AUTO CLINICAL CODING</span>
               </div>
-            </li>
-
-            <li data-reveal="bottom" data-reveal-delay="0.75s">
-              <div class="about-card">
-
-                <div class="card-icon">
-                  <img src="./assets/images/icon-3.svg" width="52" height="52" loading="lazy" alt="MLOps icon">
+              <h3>Less manual coding. <br />More useful information.</h3>
+              <p>
+                Combining LLM agents with retrieval-augmented generation to turn
+                clinical records into ICD and procedure codes.
+              </p>
+              <ul class="tags" aria-label="Methods">
+                <li>LLM agents</li>
+                <li>RAG</li>
+                <li>Clinical coding</li>
+              </ul>
+              <details>
+                <summary>
+                  Inside the project <span aria-hidden="true">+</span>
+                </summary>
+                <div class="project-detail">
+                  <h4>The challenge</h4>
+                  <p>
+                    Clinical coding is a detail-intensive process that depends
+                    on understanding both the record and the relevant coding
+                    guidance.
+                  </p>
+                  <h4>The work</h4>
+                  <p>
+                    Applying language models and retrieval to support code
+                    generation, reduce repetitive coding work, and keep relevant
+                    clinical context close to the task.
+                  </p>
                 </div>
-
-                <h3 class="h4 card-title">Predictive Patient Monitoring</h3>
-
-                <p class="card-text">
-                  Creating real-time monitoring systems that predict patient deterioration and adverse events before they occur, allowing for early intervention and improved outcomes in critical care settings.
-                </p>
-
-              </div>
-            </li>
-
-          </ul>
-
+              </details>
+              <a
+                class="project-link"
+                href="https://beamtree.com.au/news/beamtree-secures-international-contracts-for-new-autonomous-coding-product/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Read the product announcement <span aria-hidden="true">↗</span
+                ><span class="sr-only"> (opens in a new tab)</span></a
+              >
+            </div>
+          </article>
         </div>
+        <p class="work-note">
+          Project visuals are conceptual illustrations. Follow the links for
+          product information.
+        </p>
       </section>
 
-
-
-
-
-      <!-- 
-        - #PROJECT
-      -->
-
-      <section class="section project" id="projects" aria-labelledby="project-label">
-        <div class="container">
-
-          <div class="title-wrapper" data-reveal="top">
-
+      <section
+        class="expertise-section"
+        id="expertise"
+        aria-labelledby="expertise-title"
+      >
+        <div class="container section">
+          <div class="section-heading">
             <div>
-              <h2 class="h2 section-title" id="project-label">Healthcare AI Projects</h2>
-
-              <p class="section-text">
-                Explore innovative machine learning solutions that are transforming healthcare delivery and patient outcomes.
-              </p>
+              <p class="eyebrow">02 / EXPERTISE</p>
+              <h2 id="expertise-title">
+                The right methods. <br /><em>The real-world context.</em>
+              </h2>
             </div>
-
-            <a href="#project-label" class="btn btn-secondary">See All Projects</a>
-
+            <p>
+              My work connects machine learning methods with the information and
+              decisions that matter in healthcare.
+            </p>
           </div>
-
-          <ul class="grid-list">
-
-            <li>
-              <div class="project-card project-card-1" style="background-color: #f8f5fb">
-
-                <div class="card-content" data-reveal="left">
-
-                  <p class="card-tag" style="color: #a07cc5">Predictive Analytics</p>
-
-                  <h3 class="h3 card-title">Health Roundtable Insights Platform</h3>
-
-                  <p class="card-text">
-                    Developed advanced classical machine learning models powering the Health Roundtable Insights Platform's predictive forecasting capabilities. Implemented gradient boosting, random forests, and ensemble methods to enable interactive analytics for hospital performance metrics, clinical quality, patient safety, and operational efficiency.
-                  </p>
-
-                  <a href="https://platform.healthroundtable.org/news/transforming-healthcare-predictive-forecasting-now-available-health-roundtable-members" class="btn-text" style="color: #a07cc5">
-                    <span class="span">See Project</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-                <figure class="card-banner" data-reveal="right">
-                  <img src="./assets/images/project-1.webp" width="650" height="370" loading="lazy" alt="Health Roundtable Analytics Platform"
-                    class="w-100">
-                </figure>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card project-card-2" style="background-color: #f1f5fd">
-
-                <div class="card-content" data-reveal="right">
-
-                  <p class=" card-tag" style="color: #3f78e0">Clinical NLP</p>
-
-                  <h3 class="h3 card-title">Clinical Notes Analysis</h3>
-
-                  <p class="card-text">
-                    NLP system that extracts key medical information from clinical notes, converts unstructured text into structured data, and identifies potential medication interactions and adverse events.
-                  </p>
-
-                  <a href="https://beamtree.com.au/our-solutions/rippledown-expert/" class="btn-text" style="color: #3f78e0">
-                    <span class="span">See Project</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-                <figure class="card-banner" data-reveal="left">
-                  <img src="./assets/images/project-2.webp" width="600" height="367" loading="lazy" alt="Clinical NLP Project"
-                    class="w-100">
-                </figure>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card project-card-3" style="background-color: #f5faf7">
-
-                <div class="card-content" data-reveal="left">
-
-                  <p class=" card-tag" style="color: #7cb798">Predictive Patient Monitoring</p>
-
-                  <h3 class="h3 card-title">Patient Deterioration Predictor</h3>
-
-                  <p class="card-text">
-                    Real-time monitoring system that analyses vital signs and lab results to predict patient deterioration up to 24 hours before clinical signs appear, enabling early intervention in critical care units. This tool was found to improve patient outcomes as well as significantly reduce the length of stay by 5%.
-                  </p>
-
-                  <a href="https://beamtree.com.au/our-solutions/ainsoff-deterioration-index/" class="btn-text" style="color: #7cb798">
-                    <span class="span">See Project</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-                <figure class="card-banner" data-reveal="right">
-                  <img src="./assets/images/project-3.webp" width="600" height="367" loading="lazy" alt="Predictive Analytics"
-                    class="w-100">
-                </figure>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="project-card project-card-4" style="background-color: #fcf4f6">
-
-                <div class="card-content" data-reveal="left">
-
-                  <p class=" card-tag" style="color: #d16b86">Clinical Coding</p>
-
-                  <h3 class="h3 card-title">Auto Clinical Coding</h3>
-
-                  <p class="card-text">
-                    Intelligent system that leverages LLM agents and Retrieval-Augmented Generation (RAG) to automatically generate accurate ICD and procedure codes from clinical health records, reducing manual coding effort by 70% while maintaining high compliance standards.
-                  </p>
-
-                  <a href="https://beamtree.com.au/news/beamtree-secures-international-contracts-for-new-autonomous-coding-product/" class="btn-text" style="color: #d16b86">
-                    <span class="span">See Project</span>
-
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                </div>
-
-                <figure class="card-banner" data-reveal="right">
-                  <img src="./assets/images/project-4.webp" width="620" height="370" loading="lazy" alt="Auto Clinical Coding"
-                    class="w-100">
-                </figure>
-
-              </div>
-            </li>
-
-          </ul>
-
+          <div class="expertise-grid">
+            <article>
+              <span class="expertise-number">01</span>
+              <h3>Production ML <br />&amp; MLOps</h3>
+              <p>
+                Bringing machine learning into practical applications, with the
+                operational context to make it useful.
+              </p>
+              <ul>
+                <li>Production machine learning systems</li>
+                <li>Machine learning operations</li>
+                <li>Cloud-based NLP services</li>
+              </ul>
+              <a href="#experience"
+                >Explore my experience <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article>
+              <span class="expertise-number">02</span>
+              <h3>Predictive <br />machine learning</h3>
+              <p>
+                Finding patterns in complex data and building models that help
+                teams plan ahead.
+              </p>
+              <ul>
+                <li>Regression &amp; statistical modelling</li>
+                <li>Gradient boosting &amp; random forests</li>
+                <li>Ensemble methods &amp; forecasting</li>
+              </ul>
+              <a href="#projects" data-show-filter="predictive"
+                >See predictive work <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article>
+              <span class="expertise-number">03</span>
+              <h3>Language &amp; <br />generative AI</h3>
+              <p>
+                Making clinical text more useful, from extracting information to
+                automating coding workflows.
+              </p>
+              <ul>
+                <li>Clinical NLP &amp; information extraction</li>
+                <li>Large language model agents</li>
+                <li>Retrieval-augmented generation</li>
+              </ul>
+              <a href="#projects" data-show-filter="language"
+                >See language AI work <span aria-hidden="true">↗</span></a
+              >
+            </article>
+            <article>
+              <span class="expertise-number">04</span>
+              <h3>Healthcare <br />intelligence</h3>
+              <p>
+                Working with clinical data to support interpretable, practical
+                decisions at the point of care.
+              </p>
+              <ul>
+                <li>Electronic health record analytics</li>
+                <li>Clinical decision support</li>
+                <li>Patient risk &amp; real-time monitoring</li>
+              </ul>
+              <a href="#projects" data-show-filter="all"
+                >Explore the applications <span aria-hidden="true">↗</span></a
+              >
+            </article>
+          </div>
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #CONTACT
-      -->
-
-      <section class="section contact" aria-label="contact" id="contact">
-        <div class="container">
-
-          <div class="contact-card">
-
-            <div class="contact-content" data-reveal="left">
-
-              <div class="card-icon">
-                <img src="./assets/images/icon-5.svg" width="44" height="44" loading="lazy" alt="envelop icon">
-              </div>
-
-              <h2 class="h2 section-title">Ready to transform healthcare with AI?</h2>
-
-              <p class="section-text">
-                Whether you're a hospital, research institution, or healthcare technology company, let's collaborate on creating innovative solutions for the future of medicine.
-              </p>
-
-            </div>
-
-            <form action="https://formspree.io/f/mvgkwvav" method="POST" class="contact-form" data-reveal="right">
-              <div class="input-wrapper">
-                <input type="text" name="name" placeholder="Name *" required class="input-field">
-                <input type="email" name="email" placeholder="Email *" required class="input-field">
-              </div>
-              <textarea name="message" placeholder="Message *" required class="input-field"></textarea>
-              <button type="submit" class="btn btn-secondary">Send message</button>
-            </form>
-
+      <section
+        class="section container about-section"
+        id="about"
+        aria-labelledby="about-title"
+      >
+        <div class="about-label">
+          <p class="eyebrow">03 / A LITTLE ABOUT ME</p>
+          <p class="about-signature">Luke <em>Cao.</em></p>
+          <span>Guanhua Cao / Sydney</span>
+        </div>
+        <div class="about-copy">
+          <h2 id="about-title">
+            Technical curiosity. <br /><em>A human purpose.</em>
+          </h2>
+          <p class="about-lead">
+            I’m a senior machine learning engineer at Beamtree in Sydney,
+            focused on a question that keeps my work grounded: how can this help
+            the people delivering care?
+          </p>
+          <p>
+            My experience spans hospital forecasting, clinical text analysis,
+            predictive monitoring, and automated clinical coding. Across these
+            areas, I focus on accurate, interpretable models and applications
+            that fit the healthcare decisions they support.
+          </p>
+          <p>
+            I enjoy working at the meeting point of complex data and practical
+            problems—turning the former into something people can actually use.
+          </p>
+          <div class="about-links">
+            <a
+              class="text-link"
+              href="https://www.linkedin.com/in/guanhuacao/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn <span aria-hidden="true">↗</span
+              ><span class="sr-only"> (opens in a new tab)</span></a
+            ><a
+              class="text-link"
+              href="https://github.com/cadae"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub <span aria-hidden="true">↗</span
+              ><span class="sr-only"> (opens in a new tab)</span></a
+            >
           </div>
-
         </div>
       </section>
 
-    </article>
-  </main>
+      <section
+        class="container experience-section"
+        id="experience"
+        aria-labelledby="experience-title"
+      >
+        <div class="experience-heading">
+          <p class="eyebrow">EXPERIENCE / BEAMTREE</p>
+          <h2 id="experience-title">
+            Healthcare AI.<br /><em>Built at Beamtree.</em>
+          </h2>
+          <p>
+            My current work centres on production machine learning and the
+            healthcare applications it supports—from hospital forecasting to
+            clinical coding.
+          </p>
+          <a
+            class="text-link"
+            href="https://www.linkedin.com/in/guanhuacao/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Full experience on LinkedIn <span aria-hidden="true">↗</span
+            ><span class="sr-only"> (opens in a new tab)</span></a
+          >
+        </div>
+        <div class="experience-list">
+          <article class="current-role">
+            <p class="eyebrow">
+              <span class="status-dot" aria-hidden="true"></span> CURRENT
+              EMPLOYMENT
+            </p>
+            <h3>Senior Machine Learning Engineer</h3>
+            <p class="role-company">
+              Beamtree <span>· Sydney, Australia</span>
+            </p>
+            <p>
+              I work on production ML systems, MLOps, and applied AI for
+              healthcare, connecting complex clinical and operational data with
+              practical tools.
+            </p>
+            <ul class="tags" aria-label="Current focus">
+              <li>Production ML</li>
+              <li>MLOps</li>
+              <li>Healthcare AI</li>
+            </ul>
+          </article>
+          <article class="role-work">
+            <span class="experience-date">ANALYTICS &amp; FORECASTING</span>
+            <div>
+              <h3>Helping hospitals look ahead</h3>
+              <p>
+                Predictive modelling for Health Roundtable, alongside the Evolve
+                Collaborative’s focus on hospital performance and productivity.
+              </p>
+              <a
+                class="text-link"
+                href="#projects"
+                data-show-filter="predictive"
+                >Explore forecasting projects
+                <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </article>
+          <article class="role-work">
+            <span class="experience-date">LANGUAGE &amp; AUTOMATION</span>
+            <div>
+              <h3>Making clinical records more useful</h3>
+              <p>
+                Clinical information extraction and automated coding, applying
+                language models and retrieval to turn records into structured
+                information.
+              </p>
+              <a class="text-link" href="#projects" data-show-filter="language"
+                >Explore language AI projects
+                <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </article>
+          <article class="role-work">
+            <span class="experience-date">CLINICAL INTELLIGENCE</span>
+            <div>
+              <h3>Supporting earlier clinical decisions</h3>
+              <p>
+                Predictive patient monitoring that brings vital signs and
+                laboratory results together to help identify deterioration risk.
+              </p>
+            </div>
+          </article>
+          <details class="earlier-experience">
+            <summary>
+              Earlier projects &amp; education <span aria-hidden="true">+</span>
+            </summary>
+            <article>
+              <span class="experience-date">APR 2020 – JAN 2022</span>
+              <div>
+                <h3>RxMx Nightingale</h3>
+                <p>
+                  A cloud NLP service for creating, training, and managing
+                  machine learning models.
+                </p>
+              </div>
+            </article>
+            <article>
+              <span class="experience-date">APR – MAY 2020</span>
+              <div>
+                <h3>Medical image segmentation</h3>
+                <p>
+                  Machine learning to identify COVID-19 infection regions in
+                  lung CT images.
+                </p>
+              </div>
+            </article>
+            <article>
+              <span class="experience-date">2017 – 2019</span>
+              <div>
+                <h3>University of Sydney</h3>
+                <p>Education</p>
+              </div>
+            </article>
+          </details>
+        </div>
+      </section>
 
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
-    <div class="container">
-
-      <p class="copyright">
-        © 2025 Luke. All rights reserved.
-      </p>
-
-      <ul class="social-list">
-
-        <li>
-          <a href="mailto:guanhuacao@outlook.com" class="social-link">
-            <ion-icon name="mail-outline"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://www.linkedin.com/in/guanhuacao/" class="social-link">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://github.com/cadae" class="social-link">
-            <ion-icon name="logo-github"></ion-icon>
-          </a>
-        </li>
-
-      </ul>
-
-    </div>
-  </footer>
-
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-  <!-- 
-    - chat widget
-  -->
-  <script src="./assets/js/chat.js"></script>
-  <script>
-    ChatWidget.init(
-      'https://openproxy.agicloud.cc/api/openrouter', // Point to the OpenRouter proxy endpoint
-      color = '#3f78e0', 
-      title = 'Chat with Luke\'s AI Assistant',
-      font_family = '-apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Oxygen, Ubuntu, Cantarell, \'Open Sans\', \'Helvetica Neue\', sans-serif',
-      first_message = 'Hi there! I\'m Luke\'s virtual assistant. How can I help you with healthcare AI solutions?',
-      z_index = '1000',
-      api_type = 'openrouter' // Use standard openrouter type to work with proxy
-    );
-  </script>
-
-</body>
-
+      <section
+        class="contact-section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">04 / START A CONVERSATION</p>
+            <h2 id="contact-title">
+              Good work starts <br />with <em>a conversation.</em>
+            </h2>
+            <p>
+              Working on a healthcare challenge, building an AI team, or
+              exploring an idea? I’d love to hear about it.
+            </p>
+            <a class="contact-email" href="mailto:guanhuacao@outlook.com"
+              >guanhuacao@outlook.com <span aria-hidden="true">↗</span></a
+            >
+            <p class="contact-location">Based in Sydney, Australia.</p>
+          </div>
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="https://formspree.io/f/mvgkwvav"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New enquiry from Luke Cao’s portfolio"
+            />
+            <div class="form-row">
+              <div>
+                <label for="name">Your name</label
+                ><input
+                  id="name"
+                  name="name"
+                  autocomplete="name"
+                  placeholder="Alex Morgan"
+                  required
+                  maxlength="120"
+                />
+              </div>
+              <div>
+                <label for="email">Email address</label
+                ><input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="alex@company.com"
+                  required
+                  maxlength="254"
+                />
+              </div>
+            </div>
+            <label for="message">What’s on your mind?</label
+            ><textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Tell me a little about your project or idea…"
+              required
+              maxlength="5000"
+            ></textarea>
+            <div class="form-bottom">
+              <p>Send an enquiry directly to my inbox.</p>
+              <button type="submit" class="button button-primary">
+                Send message <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <p
+              id="form-status"
+              class="form-status"
+              role="status"
+              aria-live="polite"
+            ></p>
+            <a
+              id="email-fallback"
+              class="email-fallback"
+              href="mailto:guanhuacao@outlook.com"
+              >Or open this message in your email app
+              <span aria-hidden="true">↗</span></a
+            >
+            <p class="email-fallback-note">
+              Your email app opens a draft for you to review and send.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="container site-footer">
+      <a class="wordmark" href="#home">luke cao<span>.</span></a>
+      <p>© <span data-year>2026</span> Luke Cao. Built with purpose.</p>
+      <a href="#home">Back to top <span aria-hidden="true">↑</span></a>
+    </footer>
+  </body>
 </html>
