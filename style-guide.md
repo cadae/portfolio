@@ -37,3 +37,7 @@ Use 4–8px corners for components, with pills reserved for filters. Original ar
 ## Voice
 
 Use first person, short explanations, Australian English, and concrete methods. Differentiate individual contributions from product capabilities and published study results. Add employment dates, qualifications and numerical achievements only when supported by the owner or a reliable source.
+
+## Site icon
+
+The favicon uses an ivory L and a lime full stop on a forest-green rounded square, echoing the name and punctuation of the wordmark. The SVG uses paths rather than fonts so it stays consistent across devices. PNG and ICO fallbacks support browser tabs; the 180px Apple touch icon supports saved bookmarks. Keep the versioned icon URLs in `index.html` in sync when changing these assets.
