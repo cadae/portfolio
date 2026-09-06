@@ -51,3 +51,7 @@ Do not add invented employment dates, degrees, technologies, or impact metrics. 
 Before publishing, check desktop and mobile navigation, every filter, project disclosures, expertise-to-filter links, email/social/project links, required/email form validation, absence of the disabled chat UI, and absence of horizontal overflow. Test contact response handling with a local mocked `fetch` to avoid sending external messages. The authorised Formspree live test was accepted (HTTP 200, `ok: true`); the owner confirmed inbox receipt. The old AI proxy hostname did not resolve, so its key and inference service could not be tested.
 
 GitHub Pages needs only the repository files. Preserve `CNAME` for the custom domain. There is no deployment performed by the redesign scripts.
+
+## Asset caching
+
+Cloudflare currently serves CSS, JavaScript and images with a four-hour cache lifetime. The page uses content-derived `?v=` versions for the stylesheet, main script, and project illustrations so visitors fetch the matching redesign assets. Whenever one of these files changes, update its URL in `index.html` using the first 12 characters of its SHA-256 hash. This prevents new HTML from loading a previously cached version of that asset.
